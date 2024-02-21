@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/app.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <title>Parallax</title>
+  </head>
+
+  <body>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <header class="main-header">
+          <div class="layers">
+            <div class="layer__header">
+              <div class="layers__caption">Welcome to Parallax</div>
+              <div class="layers_tittle">mysterious forest</div>
+            </div>
+
+            <div
+              class="layer layers__base"
+              style="background-image: url(./img/base.png)"
+            ></div>
+            <div
+              class="layer layers__middle"
+              style="background-image: url(./img/middle.png)"
+            ></div>
+            <div
+              class="layer layers__front"
+              style="background-image: url(./img/front.png)"
+            ></div>
+          </div>
+        </header>
+        <article
+          class="main-article"
+          style="background-image: url(./img/tunnels.png)"
+        >
+          <div class="main-article__content">
+            <div class="copy">© Andrik</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- position: fixed elements can go outside --->
+  </body>
+</html>
