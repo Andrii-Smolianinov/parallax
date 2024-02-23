@@ -3,24 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/app.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      defer
-    ></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      defer
-    ></script>
     <title>Parallax</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="js/app.js" defer></script>
   </head>
 
   <body>
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
+    <div class="wrapper">
+      <div class="content">
         <header class="main-header">
           <div class="layers">
             <div class="layer__header">
@@ -30,7 +27,7 @@
 
             <div
               class="layer layers__base"
-              style="background-image: url(./img/base.png)"
+              style="background-image: url(./img/base.jpg)"
             ></div>
             <div
               class="layer layers__middle"
@@ -44,14 +41,17 @@
         </header>
         <article
           class="main-article"
-          style="background-image: url(./img/tunnels.png)"
+          style="background-image: url(./img/cave.jpg)"
         >
           <div class="main-article__content">
-            <div class="copy">© Andrik</div>
+            <div class="main-article__header">to be continued</div>
+            <p class="main-article__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore laborum vitae unde facilis assumenda tempore doloremque quo reprehenderit quaerat dignissimos voluptas at libero veniam fugiat, dolorum praesentium voluptatibus ea beatae quasi odit itaque et eligendi ex. Molestias repellendus sit, neque est perspiciatis necessitatibus assumenda cumque sapiente voluptatem deleniti, sunt natus modi.
+            </p>
+            <div class="copy">© aNdR_380v</div>
           </div>
         </article>
       </div>
-    </div>
-    <!-- position: fixed elements can go outside --->
+    </div>    
   </body>
 </html>
