@@ -46,11 +46,11 @@ body {
 .layer__header {
   padding: 20px;
   text-transform: uppercase;
-  text-shadow: var(--textShadow);
-  z-index: 3;
+  text-shadow: var(--textShadow);  
   transform: translate3d(0, calc(var(--scrolling) / 2), 0);
   transition: var(--transition);
   will-change: transform;
+  z-index: 3;
 }
 .layers__caption {
   margin-bottom: 20px;
@@ -127,8 +127,8 @@ body {
   will-change: transform;
 }
 .copy {
-  font-size: calc(var(--index) * 0.6);
-  opacity: 0.6;
   position: absolute;
   bottom: calc(var(--index) * 2);
+  font-size: calc(var(--index) * 0.8);
+  opacity: 0.6;  
 }
